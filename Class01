@@ -1,0 +1,36 @@
+import java.lang.Math;
+class Cal_area{
+	int radius;
+	int length;
+	int width;
+	int height;
+	double pi;
+	int surface;
+	double volume;
+	void volume() {
+		System.out.println("volume="+Math.round(radius*radius*radius*pi*4/3*10.0)/10.0);
+	}
+	void surface() {
+		surface=width*length*2+width*height*2+length*height*2;
+		System.out.print("surface="+surface);
+	}
+}
+public class Class01 {
+		
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Cal_area box = new Cal_area();
+		box.radius=10;
+		box.length=4;
+		box.width=5;
+		box.height=6;
+		box.pi=3.14159;
+		box.volume();
+		box.surface();
+	}
+
+}
+
+
+volume=4188.8
+surface=148
